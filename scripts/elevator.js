@@ -22,9 +22,6 @@ buildingFactory = new ethers.ContractFactory(metadata.abi, metadata.bytecode, si
     buildingContract = await buildingFactory.deploy(contract_address, deployOptions)
     await buildingContract.deployTransaction.wait()
 
-    tx = await buildingContract.bytes16Convert();
-    console.log(tx)
-
     tx = await buildingContract.goToLastFloor();
     await tx.wait()
 })();

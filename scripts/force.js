@@ -8,7 +8,7 @@ const provider = new ethers.providers.JsonRpcProvider(url);
 // Getting the accounts
 const signer = provider.getSigner(19);
 
-contract_address = "0x440C0fCDC317D69606eabc35C0F676D1a8251Ee1"
+contract_address = "0xe082b26cEf079a095147F35c9647eC97c2401B83"
 
 const metadata = JSON.parse(fs.readFileSync('../artifacts/contracts/ForceAttack.sol/ForceAttack.json').toString())
 
